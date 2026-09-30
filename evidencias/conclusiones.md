@@ -1,3 +1,4 @@
+# Tarea 3
 Responde además esta pregunta, que es la que importa: ¿por qué se separan los errores
 4xx de los 5xx? ¿Qué cambia entre unos y otros desde el punto de vista de quién tiene
 la culpa?
@@ -9,4 +10,21 @@ R/ La diferencia radica en la responsabilidad del error, se adjudica al cliente 
 recurso y cuando pides una colección?
 
 R/ Los criterios de aceptación se diferencian en una única cosa, si le pasas un id a la petición de tipo get, por medio del URI, va a interpretar eso como una petición de busqueda por Id, en cambio si mandas la petición sin id, va a interpretar la petición como un listar general del recurso, dependiendo de lo que se mande en la URI es lo que interpreta y devuelve el servidor.
+
+# Tarea 4
+¿Este caso de prueba pasó o falló? Justifica tu respuesta.
+
+R/ El caso de prueba pasó ya que estaba predeterminado para generar un error y testear la respuesta del servidor ante dicho error, la cual fue la esperada, un 404, lo que se espera cuando se manda una petición sobre un recurso que no existe en la base de datos.
+
+# Tarea 6
+¿qué observaste? ¿Por qué crees que ocurre eso? ¿Cómo comprobarías, en una
+API real, que el recurso se creó de verdad?
+
+R/ Observé que no hubó cambios en el id después de haber ejecutado la misma petición tipo post 5 veces seguidas, y al listar con get la colección de dicho recurso no veo el que estoy instertando, entonces supongo que solo sirve para simular la respuesta de un servidor y no hay una interacción real. En una API real revisaría el recurso haciendo una petición mandando el id especifico del que cree con el metodo post, así si me lo devuelve confirmo que en efecto si se creo correctamente
+
+# Tarea 7
+¿qué diferencia encontraste entre ambas respuestas? ¿Cuál usarías para
+corregir un error de escritura en un solo campo, y por qué?
+
+R/ La diferencia que note es que en el metodo PUT se borraron todos los campos que no edite, y se mantuvo el que mande, y con el metodo patch solo altero el campo que mande manteniendo el valor intacto en los otros, es decir que uno edita parcialmente y el otro edita todo asumiendo que lo que no se envia se borra. Para un hipotetico caso donde no quiero alterar todos los datos de un recurso, usaría el metodo patch, manteniendo los cambios que aplique y los valores que tenían los campos que no edite.
 
