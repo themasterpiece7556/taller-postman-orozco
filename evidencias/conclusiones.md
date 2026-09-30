@@ -50,3 +50,8 @@ Es importante al probar una API porque permite al cliente saber con exactitud c�
 ¿cómo se llama ese tipo de caso de prueba? ¿Por qué se dice que los
 defectos se concentran ahí?
 R/ Este tipo de prueba se conoce como prueba de valores limite (Boundary value analysis). se dice que los defectos se concentran ahí por varias razones, al ser valores limites normalmente puede llegar a faltar una validacion,o puede haber un error tipografico que hace que el sistema no responda correctamente al sobrepasar cierto limite, y este tipo de cosas se concentran en los puntos min min-1 y max max+1, por eso se hace necesario testearlos, para probar validaciones, verificar que no haya errores tipograficos entre otras cosas.
+
+# Tarea 11 
+Documenta qué encontraste y cómo dedujiste la estructura de esas URL.
+R/ Hay una Ruta anidada sobre los comentarios, ya que primero va el recurso del post luego el id especifico y ahí ya si se puede seleccionar la colección de commentarios, la estructura la deduje por la logica de como funcionan las URIs
+

@@ -6,3 +6,9 @@
 ![alt text](image-3.png)
 # Primer id que devuelve 404
 ![alt text](image-4.png)
+# Recurso albums
+![alt text](image-6.png)
+# Recurso photos
+![alt text](image-7.png)
+# Ruta anidada
+![alt text](image-5.png)
