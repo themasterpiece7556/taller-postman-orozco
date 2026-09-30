@@ -27,4 +27,25 @@ Internet Engineering Task Force. (2022). HTTP Semantics (RFC N.º 9110). https:/
 
 # Códigos de estado
 
+1xx Son informaticos indican que la petición fue recibida y el servidor continúa el proceso 
 
+2xx Simbolizan éxito en las peticiones enviadas, indicando que la acción solicitada fue recibida, entendida y aceptada correctamente
+
+3xx Simbolizan redirección indicando que el cliente debe tomar medidas adicionales para completar la petición
+
+4xx Simbolizan errores a nivel del cliente indicando que la solicitud contiene sintaxis incorrecta o no puede ser procesada por culpa del cliente.
+
+5x Simbolizan errores a nivel del servidor indicando que el servidor falló al intentar procesar una solicitud aparentemente válida.
+
+## Ejemplos
+
+1. 100 Continue: El servidor confirma que recibió los encabezados de la solicitud y que el cliente puede proceder a enviar el cuerpo (body).
+
+2. 200 Ok: La solicitud HTTP estándar se procesó correctamente y el servidor devuelve los datos solicitados. 
+
+3. 301 Moved Permanently: El recurso solicitado ha sido trasladado permanentemen a una nueva URL especificada en la respuesta.
+
+4. 404 Not Found: El servidor no pudo encontrar el recurso solicitado (La URL está mal escrita o ya no existe).
+
+5. 500 Internal Server Error: Ocurrió una condición inesperada en el backend (Un bug en el código, fallo en la base de datos, entre otros).
+ 
