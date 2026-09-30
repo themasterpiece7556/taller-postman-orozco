@@ -55,3 +55,6 @@ R/ Este tipo de prueba se conoce como prueba de valores limite (Boundary value a
 Documenta qué encontraste y cómo dedujiste la estructura de esas URL.
 R/ Hay una Ruta anidada sobre los comentarios, ya que primero va el recurso del post luego el id especifico y ahí ya si se puede seleccionar la colección de commentarios, la estructura la deduje por la logica de como funcionan las URIs
 
+# Tarea 12
+¿por qué es importante ver una prueba fallar antes de confiar en ella?
+R/ Para verificar que responde correctamente a los errores esperados
