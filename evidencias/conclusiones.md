@@ -37,3 +37,5 @@ Compruébalo en Postman: ejecuta varias veces la misma petición PUT y luego var
 veces la misma POST. ¿Qué diferencia observas en el resultado?
 
 R/ Observé que al repetir varias veces la petición tipo PUT no hubo cambios aparentes en la respuesta, en cambio con la peticion tipo POST, cada vez que se enviaba me generaba un nuevo id.
+
+# Tarea 9
