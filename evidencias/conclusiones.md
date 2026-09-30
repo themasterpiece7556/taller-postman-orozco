@@ -39,3 +39,14 @@ veces la misma POST. ¿Qué diferencia observas en el resultado?
 R/ Observé que al repetir varias veces la petición tipo PUT no hubo cambios aparentes en la respuesta, en cambio con la peticion tipo POST, cada vez que se enviaba me generaba un nuevo id.
 
 # Tarea 9
+1. Content-Type: Indica el formato multimedia del cuerpo de la respuesta enviada por el servidor, así como la codificación de caracteres utilizada.
+Es importante al probar una API porque permite al cliente saber con exactitud cómo procesar y parsear la informcación recibida. Sin esta cabecera, el cliente no sabría si debe interpretar la respuesta como JSON, HTML, texto plano o un archivo binario.
+
+2. Cache-Control: Especifica las directivas de almacenamiento en caché que deben seguir el cliente y los intermediarios. En la respuesta de JSONPlaceholder suele devolver max-age=43200 o no-cache
+
+3. Access-Control-Allow-Origin: Es una cabecera fundamental del protocolo CORS (Cross-Origin Resource Sharing). Indica si la respuesta puede ser compartida y consumida por un sitio web con un dominio, puerto o protocolo distinto al del servidor.
+
+# Tarea 10
+¿cómo se llama ese tipo de caso de prueba? ¿Por qué se dice que los
+defectos se concentran ahí?
+R/ Este tipo de prueba se conoce como prueba de valores limite (Boundary value analysis). se dice que los defectos se concentran ahí por varias razones, al ser valores limites normalmente puede llegar a faltar una validacion,o puede haber un error tipografico que hace que el sistema no responda correctamente al sobrepasar cierto limite, y este tipo de cosas se concentran en los puntos min min-1 y max max+1, por eso se hace necesario testearlos, para probar validaciones, verificar que no haya errores tipograficos entre otras cosas.
