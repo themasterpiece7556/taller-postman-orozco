@@ -48,4 +48,5 @@ Internet Engineering Task Force. (2022). HTTP Semantics (RFC N.º 9110). https:/
 4. 404 Not Found: El servidor no pudo encontrar el recurso solicitado (La URL está mal escrita o ya no existe).
 
 5. 500 Internal Server Error: Ocurrió una condición inesperada en el backend (Un bug en el código, fallo en la base de datos, entre otros).
- 
+
+
