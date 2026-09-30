@@ -50,3 +50,54 @@ Internet Engineering Task Force. (2022). HTTP Semantics (RFC N.º 9110). https:/
 5. 500 Internal Server Error: Ocurrió una condición inesperada en el backend (Un bug en el código, fallo en la base de datos, entre otros).
 
 
+# Cómo reproducir este taller
+
+Para importar y ejecutar los ejercicios del taller en tu propio entorno local usando Postman, sigue estos pasos:
+
+1. Clonar el repositorio:
+   ```bash
+   git clone [https://github.com/tu-usuario/taller-postman-orozco.git](https://github.com/tu-usuario/taller-postman-orozco.git)
+   cd taller-postman-orozco
+
+2. Importar la colección en Postman:
+
+Abre la aplicación Postman.
+
+Haz clic en el botón Import ubicado en la esquina superior izquierda.
+
+Selecciona o arrastra el archivo coleccion.json que se encuentra en la raíz del proyecto.
+
+Haz clic en Import para cargar todas las peticiones con sus respectivos Tests automatizados.
+
+3. Ejecutar las peticiones:
+
+Selecciona cualquier petición dentro de la colección cargada.
+
+Presiona el botón Send para interactuar con la API pública JSONPlaceholder.
+
+Revisa la pestaña Test Results en la parte inferior para comprobar la ejecución de las aserciones automatizadas de la Tarea 13.
+
+# Archivos de este repositorio
+A continuación se detalla el propósito de cada carpeta y archivo dentro del proyecto:
+
+**README.md**: Documento principal del proyecto que contiene la guía general, el marco conceptual, tablas comparativas y las instrucciones de reproducción.
+
+**coleccion.json**: Colección exportada desde Postman en formato v2.1 que incluye todas las peticiones HTTP configuradas, encabezados, cuerpos de solicitud y scripts de pruebas automatizadas (Tests).
+
+**hallazgos.md**: Documento de análisis con las observaciones técnicas del taller, incluyendo la comparación entre PUT y PATCH, el comportamiento de idempotencia, el análisis de límites (BVA) y el código de las pruebas automatizadas creadas en la Tarea 13.
+
+**evidencias/**: Carpeta destinada a guardar las capturas de pantalla organizadas por tareas:
+
+**01-get-recurso.png**: Captura de consulta exitosa a un recurso individual (GET /posts/1).
+
+**02-get-coleccion.png**: Captura del listado completo de la colección (GET /posts).
+
+**03-error-404.png**: Captura de prueba con un recurso inexistente (GET /posts/9999).
+
+**04-post-creacion.png**: Captura del registro de un nuevo elemento mediante POST.
+
+**05-test-automatico.png**: Captura de la ejecución y aprobación de los tests en la pestaña Test Results.
+
+**conclusiones.md**: Resumen final de aprendizajes obtenidos durante las pruebas de la API.
+
+**image.png / image-1.png a image-7.png**: Capturas de pantalla adicionales generadas durante la realización de las diferentes pruebas del taller.
