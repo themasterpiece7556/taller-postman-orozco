@@ -28,3 +28,12 @@ corregir un error de escritura en un solo campo, y por qué?
 
 R/ La diferencia que note es que en el metodo PUT se borraron todos los campos que no edite, y se mantuvo el que mande, y con el metodo patch solo altero el campo que mande manteniendo el valor intacto en los otros, es decir que uno edita parcialmente y el otro edita todo asumiendo que lo que no se envia se borra. Para un hipotetico caso donde no quiero alterar todos los datos de un recurso, usaría el metodo patch, manteniendo los cambios que aplique y los valores que tenían los campos que no edite.
 
+# Tarea 8 
+Investiga qué significa que un método HTTP sea idempotente. Luego determina
+cuáles de los cinco métodos lo son y cuáles no.
+R/ Un método es idempotente cuando la respuesta de la petición siempre es la misma, de los 5 metodos GET, PUT y DELETE son idempotentes 
+
+Compruébalo en Postman: ejecuta varias veces la misma petición PUT y luego varias
+veces la misma POST. ¿Qué diferencia observas en el resultado?
+
+R/ Observé que al repetir varias veces la petición tipo PUT no hubo cambios aparentes en la respuesta, en cambio con la peticion tipo POST, cada vez que se enviaba me generaba un nuevo id.
